@@ -56,4 +56,4 @@ php artisan cordon:verify
 
 ## 📫 Find me
 
-🌐 [chrisabner.github.io](https://chrisabner.github.io) · 💼 [PromoInvestor](https://promoinvestor.com)
+🌐 [chrisabner.github.io](https://chrisabner.github.io) · 💼 [LinkedIn](https://www.linkedin.com/in/chrisabnerr) · 💼 [PromoInvestor](https://promoinvestor.com)
