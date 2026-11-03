@@ -51,8 +51,8 @@ php artisan cordon:verify
 
 ## 📊 GitHub stats
 
-![Chris's GitHub stats](https://github-readme-stats.vercel.app/api?username=ChrisAbner&show_icons=true&theme=transparent&hide_border=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ChrisAbner&layout=compact&theme=transparent&hide_border=true)
+![Chris's GitHub stats](./profile/stats.svg)
+![Top languages](./profile/top-langs.svg)
 
 ## 📫 Find me
 
