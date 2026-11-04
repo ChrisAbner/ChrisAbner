@@ -1,20 +1,20 @@
 # Hi, I'm Chris Abner 👋
 
-**Senior Full-Stack Developer** from Cancún, México. I build multi-tenant B2B SaaS for the vacation club and travel industry with **Laravel 12, Vue 3, Inertia.js and AWS** — 30+ white-label brands, 98+ vacation clubs, 40,000+ hotels of inventory.
+**Senior Full-Stack Developer** in Cancún, México. I build web products with **PHP/Laravel, Vue 3, Inertia.js and AWS**, and I contribute fixes to the PHP and Laravel open-source ecosystem.
 
 ---
 
-## 🔥 Featured project: Cordon Modulith
+## 🔥 Cordon Modulith
 
 **Verifiable boundaries between the modules of a Laravel application, checked in CI.**
 
-Modular monoliths usually rely on folders. Folders don't stop the `Billing` module from reaching into `Catalog`'s models — six months later the "modules" are just directories. Cordon Modulith reads your code statically, builds the dependency graph between modules, and fails the build when a module:
+Folders don't stop the `Billing` module from reaching into `Catalog`'s models. Cordon Modulith parses your code statically (it never loads or runs it), builds the dependency graph between modules and fails the build when a module:
 
 - uses **internal classes** of another module instead of its public API,
 - depends on a module it **did not declare**, or
 - takes part in a **dependency cycle**.
 
-It also ships Laravel Boost resources that teach AI coding agents to go through a module's public API. Inspired by Spring Modulith and Shopify's Packwerk, adapted to Laravel conventions.
+It works with nwidart/laravel-modules, InterNACHI/modular or a plain `app/Modules` folder, supports a baseline for existing projects, and also runs as a Pest expectation, a PHPStan rule and a GitHub Action. `php artisan cordon:docs` generates Mermaid diagrams of the real architecture.
 
 ```bash
 composer require --dev chrisabner/cordon-modulith
@@ -23,19 +23,21 @@ php artisan cordon:verify
 
 [![Tests](https://github.com/ChrisAbner/Cordon-Modulith/actions/workflows/tests.yml/badge.svg)](https://github.com/ChrisAbner/Cordon-Modulith/actions/workflows/tests.yml)
 [![Latest version](https://img.shields.io/packagist/v/chrisabner/cordon-modulith.svg)](https://packagist.org/packages/chrisabner/cordon-modulith)
-[![Downloads](https://img.shields.io/packagist/dt/chrisabner/cordon-modulith.svg)](https://packagist.org/packages/chrisabner/cordon-modulith)
 
-📖 [Documentation](https://chrisabner.github.io/Cordon-Modulith/) · 📦 [Packagist](https://packagist.org/packages/chrisabner/cordon-modulith) · 💻 [Repository](https://github.com/ChrisAbner/Cordon-Modulith)
+📖 [Documentation](https://chrisabner.github.io/Cordon-Modulith/) · 📦 [Packagist](https://packagist.org/packages/chrisabner/cordon-modulith) · 💻 [Repository](https://github.com/ChrisAbner/Cordon-Modulith) · Status: 0.2 (alpha)
 
-> Status: 0.1 (alpha) — the public API may change before 1.0.
+## 🤝 Open source
 
----
+Merged pull requests:
 
-## 🛠️ What I'm building
+- **[doctrine/DoctrineBundle#2324](https://github.com/doctrine/DoctrineBundle/pull/2324)**: `find()` no longer refreshes managed entities on ORM < 3.7, which ran an extra query and discarded their unflushed changes.
+- **[pestphp/pest-plugin-browser#295](https://github.com/pestphp/pest-plugin-browser/pull/295)**: scoped container bindings no longer leak between requests in browser tests (it broke Inertia SSR).
+- **[pestphp/pest#2002](https://github.com/pestphp/pest/pull/2002)**: PHPUnit extensions can register event subscribers again in `--parallel` mode (based on a fix proposed in #1685).
+- **[php-debugbar/php-debugbar#1074](https://github.com/php-debugbar/php-debugbar/pull/1074)**: no more "Refused to get unsafe header" console errors on cross-origin XHR.
 
-- **[PromoInvestor](https://promoinvestor.com)** — fintech rates comparator for Mexico (Laravel, Laravel Cloud). My capstone project.
-- **Riviera Apps & Web** — apps, websites and marketing for local businesses in Cancún.
-- **Owners Link** — multi-tenant B2B SaaS platform for vacation clubs, with external API aggregation via DTOs, Redis caching and AWS infrastructure (EC2, S3, RDS, Lambda).
+## 🛠️ Also building
+
+- **[PromoInvestor](https://promoinvestor.com)**: fintech rates comparator for Mexico (Laravel, Laravel Cloud).
 
 ## 🧰 Stack
 
@@ -56,4 +58,4 @@ php artisan cordon:verify
 
 ## 📫 Find me
 
-🌐 [chrisabner.github.io](https://chrisabner.github.io) · 💼 [LinkedIn](https://www.linkedin.com/in/chrisabnerr) · 💼 [PromoInvestor](https://promoinvestor.com)
+🌐 [chrisabner.github.io](https://chrisabner.github.io) · 💼 [LinkedIn](https://www.linkedin.com/in/chrisabnerr)
