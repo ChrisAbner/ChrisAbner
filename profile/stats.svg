@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">ChrisAbner&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 86, Total PRs: 42, Total Issues: 9, Contributed to (last year): 12</desc>
+        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 86, Total PRs: 43, Total Issues: 9, Contributed to (last year): 12</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 202.45799916338407;
+        stroke-dashoffset: 201.97475868411325;
       }
     }
   
@@ -188,7 +188,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >42</text>
+      >43</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
