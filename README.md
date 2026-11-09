@@ -24,16 +24,18 @@ php artisan cordon:verify
 [![Tests](https://github.com/ChrisAbner/Cordon-Modulith/actions/workflows/tests.yml/badge.svg)](https://github.com/ChrisAbner/Cordon-Modulith/actions/workflows/tests.yml)
 [![Latest version](https://img.shields.io/packagist/v/chrisabner/cordon-modulith.svg)](https://packagist.org/packages/chrisabner/cordon-modulith)
 
-📖 [Documentation](https://chrisabner.github.io/Cordon-Modulith/) · 📦 [Packagist](https://packagist.org/packages/chrisabner/cordon-modulith) · 💻 [Repository](https://github.com/ChrisAbner/Cordon-Modulith) · Status: 0.2 (alpha)
+📖 [Documentation](https://chrisabner.github.io/Cordon-Modulith/) · 📦 [Packagist](https://packagist.org/packages/chrisabner/cordon-modulith) · 💻 [Repository](https://github.com/ChrisAbner/Cordon-Modulith)
 
 ## 🤝 Open source
 
-Merged pull requests:
+Selected merged pull requests:
 
+- **[php/php-src#25286](https://github.com/php/php-src/pull/25286)**: in PHP 8.6, `array_map()` with a first-class callable called the wrong function inside a namespace or with `use function`. Fixed before the 8.6.0 release.
+- **[laravel/cashier-stripe#1886](https://github.com/laravel/cashier-stripe/pull/1886)**: Cashier accepts `amount_off` coupons with a `forever` duration, which Stripe allows again.
 - **[doctrine/DoctrineBundle#2324](https://github.com/doctrine/DoctrineBundle/pull/2324)**: `find()` no longer refreshes managed entities on ORM < 3.7, which ran an extra query and discarded their unflushed changes.
-- **[pestphp/pest-plugin-browser#295](https://github.com/pestphp/pest-plugin-browser/pull/295)**: scoped container bindings no longer leak between requests in browser tests (it broke Inertia SSR).
-- **[pestphp/pest#2002](https://github.com/pestphp/pest/pull/2002)**: PHPUnit extensions can register event subscribers again in `--parallel` mode (based on a fix proposed in #1685).
-- **[php-debugbar/php-debugbar#1074](https://github.com/php-debugbar/php-debugbar/pull/1074)**: no more "Refused to get unsafe header" console errors on cross-origin XHR.
+- **[pestphp/pest#2002](https://github.com/pestphp/pest/pull/2002)**: PHPUnit extensions can register event subscribers again in `--parallel` mode (based on a fix proposed by @stsepelin in [pestphp/pest#1685](https://github.com/pestphp/pest/pull/1685)).
+
+[All my merged pull requests](https://github.com/search?q=author%3AChrisAbner+is%3Apr+is%3Amerged+-user%3AChrisAbner&type=pullrequests)
 
 ## 🛠️ Also building
 
