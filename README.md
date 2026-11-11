@@ -31,6 +31,7 @@ php artisan cordon:verify
 Selected merged pull requests:
 
 - **[php/php-src#25286](https://github.com/php/php-src/pull/25286)**: in PHP 8.6, `array_map()` with a first-class callable called the wrong function inside a namespace or with `use function`. Fixed before the 8.6.0 release.
+- **[php/php-src#25383](https://github.com/php/php-src/pull/25383)**: with the tracing JIT, `++`/`--` on a reference (`global`, `static`, `&$v`) could return its integer result read as a float, so `4` came back as `4.4E-323`. A regression since PHP 8.4.0, fixed in 8.4 and later.
 - **[laravel/cashier-stripe#1886](https://github.com/laravel/cashier-stripe/pull/1886)**: Cashier accepts `amount_off` coupons with a `forever` duration, which Stripe allows again.
 - **[doctrine/DoctrineBundle#2324](https://github.com/doctrine/DoctrineBundle/pull/2324)**: `find()` no longer refreshes managed entities on ORM < 3.7, which ran an extra query and discarded their unflushed changes.
 - **[pestphp/pest#2002](https://github.com/pestphp/pest/pull/2002)**: PHPUnit extensions can register event subscribers again in `--parallel` mode (based on a fix proposed by @stsepelin in [pestphp/pest#1685](https://github.com/pestphp/pest/pull/1685)).
